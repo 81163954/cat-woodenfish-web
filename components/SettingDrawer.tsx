@@ -59,6 +59,9 @@ export default function SettingDrawer() {
             <DrawerClose asChild>
               <Button variant="outline">关闭</Button>
             </DrawerClose>
+            <div className="pt-4 flex items-center justify-center">
+              猫猫木鱼 v1.0
+            </div>
           </DrawerFooter>
         </div>
       </DrawerContent>
