@@ -209,6 +209,7 @@ function Cat(props: any) {
 
   return (
     <primitive
+      {...props}
       object={!isAnimating ? idle.scene : hit.scene}
       ref={ref}
       onPointerDown={() => {
@@ -248,9 +249,9 @@ export default function Home() {
       >
         <ambientLight intensity={Math.PI} />
 
-        <Cat position={[0, 0, 0]} />
-        <Stick position={[0, 0, -1]} />
-        <Heart position={[0, 0, -2]} />
+        <Cat position={[0, 0, -1]} />
+        <Stick position={[0, 0, -2]} />
+        <Heart position={[0, 0, -3]} />
       </Canvas>
     </div>
   );
