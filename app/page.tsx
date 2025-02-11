@@ -117,13 +117,13 @@ function Cat(props: any) {
 
   const { isAnimating, setIsAnimating, sound } = useStatus((state) => state);
 
-  const audioLoader = new THREE.AudioLoader();
-  audioLoader.load("sounds/hit.mp3", function (buffer) {
-    sound.setBuffer(buffer);
-    sound.setLoop(false);
-    sound.setVolume(1);
-    // sound.play();
-  });
+  // const audioLoader = new THREE.AudioLoader();
+  // audioLoader.load("sounds/hit.mp3", function (buffer) {
+  //   sound.setBuffer(buffer);
+  //   sound.setLoop(false);
+  //   sound.setVolume(1);
+  //   // sound.play();
+  // });
 
   const idle = useLoader(GLTFLoader, "/cat1/idle/cat.gltf"); // 加载 GLB 文件
   const hit = useLoader(GLTFLoader, "/cat1/hit/cat.gltf"); // 加载 GLB 文件

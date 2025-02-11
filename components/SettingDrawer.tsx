@@ -46,6 +46,12 @@ export default function SettingDrawer() {
             <Button
               // className=" bg-black hover:bg-black/80"
               variant={"default"}
+              onClick={() =>
+                window.open(
+                  "https://github.com/81163954/cat-woodenfish-web",
+                  "_blank"
+                )
+              }
             >
               <Github />
               Github
