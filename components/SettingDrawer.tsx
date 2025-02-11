@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Minus, Plus, Settings } from "lucide-react";
+import { Github, Minus, Plus, Settings } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -43,9 +43,15 @@ export default function SettingDrawer() {
             />
           </div>
           <DrawerFooter>
-            <Button>Submit</Button>
+            <Button
+              // className=" bg-black hover:bg-black/80"
+              variant={"default"}
+            >
+              <Github />
+              Github
+            </Button>
             <DrawerClose asChild>
-              <Button variant="outline">Cancel</Button>
+              <Button variant="outline">关闭</Button>
             </DrawerClose>
           </DrawerFooter>
         </div>
